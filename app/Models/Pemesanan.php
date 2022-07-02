@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Pemesanan extends Model
+{
+    use HasFactory;
+    protected $fillable=[
+        'nama', 'no_telepon', 'alamat', 'email', 'jenis_pesanan', 'jenis_pengerjaan', 'pembayaran', 'pesan'
+    ];
+
+    protected $hidden = [
+        'id',
+    ];
+}

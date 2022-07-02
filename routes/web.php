@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\PemesananController;
 use App\Http\Controllers\MitraController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RegMitraController;
 
@@ -30,10 +32,15 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/ngurah_laundry', function () {
+    return view('toko.ngurah_laundry');
+});
 
 Route::resource('pengguna', PenggunaController::class);
 
 Route::resource('mitra', MitraController::class);
+
+Route::resource('pemesanan', OrderController::class);
 
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/login', [LoginController::class, 'authenticate']);
@@ -50,3 +57,7 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/regmitra', [RegMitraController::class, 'index']);
 Route::post('/regmitra', [RegMitraController::class, 'store']);
+
+
+Route::get('/pesan', [PemesananController::class, 'index']);
+Route::post('/pesan', [PemesananController::class, 'store']);

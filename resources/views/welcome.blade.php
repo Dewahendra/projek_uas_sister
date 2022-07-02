@@ -9,7 +9,7 @@
     <div class="container d-flex justify-content-between">
 
       <div id="logo">
-        <h1><a href="index.html">GO<span>LAUNDRY</span></a></h1>
+        <h1><a href="/welcome">GO<span>LAUNDRY</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
       </div>
@@ -22,6 +22,7 @@
               <button type="submit" class="btn btn-outline-success mt-4">Logout</button>
           </form>
           </li>
+            <li><a class="nav-link scrollto" href="">Pesanan</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -48,7 +49,7 @@
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="">Ngurah Laundry </a></h4>
+              <h4><a href="/ngurah_laundry">Ngurah Laundry </a></h4>
               <p>Jl. Setia Budi no.43, Penarukan Singaraja</p>
             </div>
           </div>

@@ -29,6 +29,9 @@
 <!-- Template Main CSS File -->
 <link href="{{asset('template_home/css/style.css')}}" rel="stylesheet">
 
+ {{-- Allerts --}}
+ @include('sweetalert::alert')
+
 <!-- =======================================================
 * Template Name: Reveal - v4.7.0
 * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/

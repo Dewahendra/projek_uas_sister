@@ -39,6 +39,7 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'penggunas',
+            // 'provider' => 'mitras',
         ],
     ],
 
@@ -63,8 +64,13 @@ return [
         'penggunas' => [
             'driver' => 'eloquent',
             'model' => App\Models\Pengguna::class,
-            'model' => App\Models\Mitra::class,
+            // 'model' => App\Models\Mitra::class,
         ],
+
+        // 'mitras' => [
+        //     'driver' => 'eloquent',
+        //     'model' => App\Models\Mitra::class,
+        // ],
 
         // 'mitras' => [
         //     'driver' => 'database',
